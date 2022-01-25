@@ -1,13 +1,16 @@
 import './App.css';
 import Sidebar from './Sidebar.js'
-import SidebarOption from './SidebarOption';
+import react from 'react';
+import Feed from './Feed.js'
+import Widgets from './Widgets';
 function App() {
   return (
-    <div className="App">
-      <h1>lets build twitter clone</h1> 
+    <div className="app"> 
       <Sidebar/>
 
+      <Feed/>
       
+      <Widgets/>
     </div>
   );
 }
