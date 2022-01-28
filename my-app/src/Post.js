@@ -12,30 +12,30 @@ function Post({
     verified,
     timestamp,
     image,
-    avatar
+    avatar,text
 }) {
   return (
   <div className="post">
      
        <div className="post_avatar">
-             <Avatar src="https://i0.wp.com/www.cssscript.com/wp-content/uploads/2020/12/Customizable-SVG-Avatar-Generator-In-JavaScript-Avataaars.js.png?fit=438%2C408&ssl=1"/>
+             <Avatar src={avatar}/>
        </div>
 
        <div className="post_body">
            <div className="post_header">
                <div    className="post_headerText">
                  <h3>
-                     Ritish jaiswal{" "}
+                     {displayName}{" "}
                      <span className="post_headerSpecial">
-                         <VerifiedIcon className="post_badge"/>@Ritish jaiswal
+                            {verified && <VerifiedIcon className="post_badge"/>}@{username}
                      </span>
                  </h3>
                </div>
                <div className="post_headerDescription">
-                   <p>I challenge you to build a twitter clone</p>
+                   <p>{text}</p>
                </div>
            </div>
-           <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif"/>
+           <img src={image} />
             
         <div className="post_footer">
             <ChatBubbleOutlineOutlinedIcon fontSize="small"/>
