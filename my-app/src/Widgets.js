@@ -9,7 +9,7 @@ import {
 } from "react-twitter-embed";
 function Widgets(){
   return ( 
-  <div className="widgets">
+  <div className="widgets"> 
         <div className="widgets_input">
           <SearchIcon className="widgets_searchIcon"/>
           <input placeholder="Search twitter" type="text"/>
